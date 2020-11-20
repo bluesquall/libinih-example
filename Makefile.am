@@ -4,4 +4,4 @@ EXTRA_DIST = .build-aux/git-version-gen
 
 AM_CFLAGS = $(INIH_CFLAGS)
 
-inih_test_SOURCES = config.h src/inih-example.h src/inih-example.c
+inih_example_SOURCES = config.h src/inih-example.h src/inih-example.c
