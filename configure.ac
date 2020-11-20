@@ -12,8 +12,8 @@ AC_CONFIG_FILES([Makefile])
 
 AC_SEARCH_LIBS([argp_parse],[argp])
 
-PKG_CHECK_MODULES([INIH], [inih >= 0.0.1])
-AC_CHECK_HEADER([ini.h],
+PKG_CHECK_MODULES([INIH], [inih >= r52])
+AC_CHECK_HEADER([inih/ini.h],
 	AC_DEFINE([HAVE_INI_H], [1], ["ini.h exists"]),
 	AC_MSG_ERROR(["ini.h not found"]))
 AC_SEARCH_LIBS([ini_parse], [inih],
