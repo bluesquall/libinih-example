@@ -8,7 +8,7 @@ compiler:
   - gcc
   - clang
 install:
-  - git clone --depth 1 git@github.com:bluesquall/inih.git
+  - git clone --depth 1 https://github.com/bluesquall/inih.git
   - pushd inih
   - autoreconf -fi && ./configure && make
   - sudo make install
