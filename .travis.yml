@@ -9,8 +9,6 @@ compiler:
   - clang
 install:
   - git clone --depth 1 https://github.com/bluesquall/inih.git
-  - pushd inih
-  - autoreconf -fi && ./configure && make
-  - sudo make install
+  - pushd inih && autoreconf -fi && ./configure && make && sudo make install && popd
 script:
   - autoreconf -fi && ./configure && make
