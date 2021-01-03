@@ -7,5 +7,10 @@ language: c
 compiler:
   - gcc
   - clang
+install:
+  - git clone --depth 1 git@github.com:bluesquall/inih.git
+  - pushd inih
+  - autoreconf -fi && ./configure && make
+  - sudo make install
 script:
   - autoreconf -fi && ./configure && make
